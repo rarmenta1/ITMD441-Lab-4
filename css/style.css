@@ -1,0 +1,28 @@
+body	{
+	background-color: #000099;
+  position: relative;
+}
+
+#title, #heading  {
+  color: yellow;
+}
+
+#assignmentName {
+  margin-left: 16px;
+  margin-top: 16px;
+  font-size: 1.5em;
+}
+
+#heading {
+	text-align: center;
+  font-size: 72px;
+  margin-top: 16px;
+}
+
+#form-container {
+  background-color: white;
+	text-align: center;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
