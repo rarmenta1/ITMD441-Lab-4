@@ -14,16 +14,24 @@
     </section>
     <div id="main-container">
       <h1 id="heading">Weather API Dashboard</h1>
-      <form id="form-container">
-        <fieldset>
+      <div id="form-container">
           <div class="form-field">
             <label class="location">Please Enter Location Name:</label>
             <input type="text" class="textbox" id="location_name_field" name="location_name_field">
-            <input type="button" id="location_name_button" name="location_name_button" value="Submit">
+            <button onclick="returnLocation()" class="location_name_button" id="location_name_button">Submit</button>
           </div>
-          <p>Around this area is where the Weather information will be displayed.</p>
-        </fieldset>
-      </form>
+          <div id="Weather-Report">
+            <p id="Region">Region: Your Location</p>
+            <h3 id="Current-Conditions">Current Conditions:</h3>
+            <p id="DayHour">Dayhour: Dayhour Info</p>
+            <p id="Temp">Temperature: Current Temperature</p>
+            <p id="Precip">Precipitation: Current Precipitation</p>
+            <p id="Humidity">Humidity: Current Humidity</p>
+            <p id="Wind">Wind: Current Wind</p>
+            <p id="Comment">Additional Comments:</p>
+            <img id="weather-icon" src="" alt="">
+          </div>
+      </div>
     </div>
   </body>
 </html>
