@@ -84,3 +84,7 @@ body	{
 #flex-section .item5 {
 	order: 5;
 }
+
+#flex-section2 .item7  {
+  margin-bottom: 16px;
+}
