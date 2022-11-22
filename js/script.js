@@ -200,7 +200,7 @@ function returnLocation(){
   icon4.src = Day4_icon;
 
   // Day 5
-  document.getElementById('Day5').innerHTML = Day4_date;
+  document.getElementById('Day5').innerHTML = Day5_date;
   document.getElementById('Comment5').innerHTML = 'Comment: ' + Day5_com;
   document.getElementById('Max_Temp5').innerHTML = 'Max Temperature: ' + Day5_maxC + "\u2103/" + Day5_maxF + 	"\u2109";
   document.getElementById('Min_Temp5').innerHTML = 'Min Temperature: ' + Day5_minC + "\u2103/" + Day5_minF + 	"\u2109";
