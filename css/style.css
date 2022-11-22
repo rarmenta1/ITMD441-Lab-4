@@ -63,16 +63,17 @@ body	{
 }
 
 #flex-section .item1,
-#flex-section2 .item6 {
+#flex-section2 .item5 {
 	order: 1;
 }
 
 #flex-section .item2,
-#flex-section2 .item7 {
+#flex-section2 .item6 {
 	order: 2;
 }
 
-#flex-section .item3 {
+#flex-section .item3,
+#flex-section2 .item7 {
 	order: 3;
 }
 
@@ -80,6 +81,6 @@ body	{
 	order: 4;
 }
 
-#flex-section .item4 {
+#flex-section .item5 {
 	order: 5;
 }
