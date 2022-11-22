@@ -1,5 +1,27 @@
+
+var input = document.getElementById("location_name_field");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    input.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  usrlocation = position.coords.latitude + "," + position.coords.longitude;
+  console.log(usrlocation);
+  document.getElementById('location_name_field').value = usrlocation;
+}
+
+
+
+
+
+
 function returnLocation(){
-  let input = document.getElementById("location_name_field").value;
+  var input = document.getElementById("location_name_field").value;
 
   alert(input)
   
@@ -11,10 +33,11 @@ function returnLocation(){
   parseData(myArray);
   }
   }
-  
+
+
+
   let site = myRequest.open('GET', 'https://weatherdbi.herokuapp.com/data/weather/' + input, true);
   
-  let test1 = JSON.stringify(site);
   
   myRequest.send();
 
@@ -57,10 +80,6 @@ function returnLocation(){
   icon.src = usrIcon;
 
 
-
-
   }
-
-
 
 }
