@@ -15,15 +15,8 @@ function showPosition(position) {
   document.getElementById('location_name_field').value = usrlocation;
 }
 
-
-
-
-
-
 function returnLocation(){
   var input = document.getElementById("location_name_field").value;
-
-  alert(input)
   
   var myRequest = new XMLHttpRequest();
   myRequest.onreadystatechange = function(){
@@ -39,17 +32,12 @@ function returnLocation(){
   alert("Service is unavailable right now \n Please Try Again later");
   }
 
-
-
   let site = myRequest.open('GET', 'https://weatherdbi.herokuapp.com/data/weather/' + input, true);
   
   
   myRequest.send();
 
   function parseData(arr) {
-
-  console.log(arr);
-
 
 // current conditions
   usrRegion = arr.region;
@@ -62,15 +50,6 @@ function returnLocation(){
   usrWindMile = arr.currentConditions.wind.mile;
   usrComment = arr.currentConditions.comment;
   usrIcon = arr.currentConditions.iconURL;
-
-  console.log(arr.region);
-  console.log(arr.currentConditions);
-  console.log(arr.currentConditions.dayhour);
-  console.log(arr.currentConditions.temp);
-  console.log(arr.currentConditions.precip);
-  console.log(arr.currentConditions.humidity);
-  console.log(arr.currentConditions.wind);
-  console.log(arr.currentConditions.comment);
 
   //Day 1
   Day1_date = arr.next_days[1].day
@@ -144,12 +123,6 @@ function returnLocation(){
   Day7_minF = arr.next_days[7].min_temp.f;
   Day7_icon = arr.next_days[7].iconURL;
  
-
-  console.log(arr.next_days);
-  console.log(arr.next_days[0]);
-  console.log(arr.next_days[0].day);
-
-
   
   const icon = document.querySelector("#weather-icon");
   const icon1 = document.querySelector("#weather-icon1");
@@ -220,7 +193,6 @@ function returnLocation(){
   document.getElementById('Min_Temp7').innerHTML = 'Min Temperature: ' + Day7_minC + "\u2103/" + Day7_minF + 	"\u2109";
   icon7.src = Day7_icon;
   
-
   }
 
 }
