@@ -32,6 +32,11 @@ function returnLocation(){
   var myArray = JSON.parse(myRequest.responseText);
   parseData(myArray);
   }
+  else if (myRequest.status === 400)  {
+  alert("Invalid location \n Please Enter a valid location name/coordinates");
+  }
+  else if (myRequest.status === 503)  
+  alert("Service is unavailable right now \n Please Try Again later");
   }
 
 

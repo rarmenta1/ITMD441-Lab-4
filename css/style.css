@@ -1,5 +1,12 @@
+html {
+  min-height: 100%;
+  background-image: url('../weather-Report.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
 body	{
-	background-color: #000099;
   position: relative;
 }
 
@@ -25,4 +32,13 @@ body	{
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.form-field {
+  padding-top: 16px;
+}
+
+.location, .geo_location_name_button,
+.location_name_button {
+  font-weight: bold;
 }
